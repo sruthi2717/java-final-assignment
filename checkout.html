@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./checkout.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section id="main-section">
+        <h1 id="main-heading">Checkout</h1>
+
+        <div id="content-wrapper">
+          <div id="card-list">
+            <h3 class="section-heading">
+              Total Items: <span id="item-count">0</span>
+            </h3>
+            <div id="checkout_cards_container"></div>
+
+            <div class="checkout_card" id="checkout_card">
+              
+            </div>
+          </div>
+      
+        
+           <div class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total Items: <span id="total-items">0</span></p>
+            <p>Total Price: <span id="total-price">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+          </div>
+          <ul id="arrayList"></ul>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./checkout.js"></script>
+</html>

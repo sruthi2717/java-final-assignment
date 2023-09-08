@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 4 </title>
+        <link rel="stylesheet" href="./product.css">
+    </head>
+
+    <body>
+
+        <section id="product">
+
+            <div class="left-column">
+                <img id="productImg"
+                    src=""
+                    alt="Not found">
+            </div>
+
+
+            <div class="right-column">
+                <div class="product-description">
+                    <h1 id="name"></h1>
+                    <h4 id="brand"></h4>
+                    <h3>Price: Rs <span id="price"></span></h3>
+                    <div class="description">
+                        <h3>Description</h3>
+                        <p id="description"></p>
+                    </div>
+                    <div class="product-preview">
+                        <h3>Product Preview</h3>
+                        <div class="previewImg">
+                            <img id="pr0" 
+                                alt="">
+                            <img id="pr1"
+                                alt="">
+                            <img id="pr2"
+                                alt="">
+                            <img id="pr3"
+                                alt="">
+                            <img id="pr4"
+                                alt="">
+                            <img id="pr5" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <h2>Cart</h2>
+                    <ul id="cart-items"></ul>
+                    <p>Total Items: <span id="total-items">0</span></p>
+                    <p>Total Price: <span id="total-price">0</span></p>
+                    <button onclick="checkout()">Checkout</button>
+                  </div>
+                <div class="btn">
+                    <button id="add-to-cart" onclick="addToCart(document.getElementById('name').innerHTML, document.getElementById('price').innerHTML,document.getElementById('productImg').src)">Add to Cart</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <footer>
+
+            <div class="footer-wrapper">
+                <div class="column-1">
+
+                    <ul>
+                        <h3>Online Store</h3>
+                        <li>Men Clothing </li> 
+                        <li>Women Clothing</li>   
+                        <li>Men Accessories</li>
+                        <li>Women Accessories</li>     
+                    </ul>
+                </div>
+
+                <div class="column-2">
+
+                    <ul>
+                        <h3>Helpful Link</h3>
+                        <li>Home </li> 
+                        <li>About</li>   
+                        <li>Contact</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="column-3">
+
+                    <ul>
+                        <h3>Partners</h3>
+                        <li>Zara</li> 
+                        <li>PANTALOONS</li>   
+                        <li>LEVIS</li>
+                        <li>+ MANY MORE</li>     
+                    </ul>
+                </div>
+
+                <div class="column-4">
+
+                    <ul>
+                        <h3>Address</h3>
+                        <li>Building 101</li> 
+                        <li>Central Avenue</li>   
+                        <li>LA-902722</li>
+                        <li>Unitest States</li>     
+                    </ul>
+                </div>
+
+                <div class="column-1">
+
+                </div>
+
+
+            </div>
+        </footer>
+
+
+
+        <script  src="./product_page.js"></script>
+        <!-- <script src="./checkout.js"></script> -->
+    </body>
+
+</html>
+
+

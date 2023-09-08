@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Output</title>
+</head>
+<body>
+    <h1>Array Data</h1>
+    <ul id="arrayList"></ul>
+    <script>
+        var arrayList = document.getElementById("arrayList");
+        
+        // Retrieve array data from local storage
+        var arrayData = JSON.parse(localStorage.getItem('myArray')) || [];
+
+        // Populate the list with array data or object properties
+        for (var i = 0; i < arrayData.length; i++) {
+            var listItem = document.createElement("li");
+            if (typeof arrayData[i] === "object") {
+                var objectProperties = Object.entries(arrayData[i]);
+                var propertyString = objectProperties.map(([key, value]) => `${key}: ${value}`).join(", ");
+                listItem.textContent = `{ ${propertyString} }`;
+            } else {
+                listItem.textContent = JSON.stringify(arrayData[i]);
+            }
+            arrayList.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>

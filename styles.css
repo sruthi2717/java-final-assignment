@@ -1,0 +1,337 @@
+/* @font-face{
+    font-family:myFont;
+    src:url(OpenSans-Regular.ttf);
+} */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* font-family: "Montserrat", sans-serif; */
+}
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+}
+h2{
+    font-family: sans-serif;
+}
+
+
+.model-image{
+     width: 100%;
+    height: 260px;
+}
+
+.model-image1{
+    width: 100%;
+    height: 260px;
+}
+#clothing-acc-section{
+    width: 100%;
+}
+.cloths-id{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.Acc-id{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.cloth-card{
+     width: 100%;
+    box-sizing: border-box;  
+    padding: px;
+    margin: 0px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5)
+ 
+}
+.cloth-card:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+.Acc-card{
+    width: 100%;
+    box-sizing: border-box;  
+    padding: px;
+    margin: 0px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5)
+}
+.Acc-card:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+.header-tag{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.header-tag1{
+    padding-top: 10%;
+    padding-left: 50px;
+}
+    
+.details-div{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.details-div1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.card-header{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgb(27, 25, 25);
+}
+.card-price{
+    padding-top: 5px;
+    color: rgb(19, 144, 153);
+    font-weight: 600;
+}
+.cloth-brand{
+    padding-top: 5px;
+    color: #5a5959;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .cloths-id {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 10px;
+    }
+  .cloth-card{
+     width: 100%;
+  }
+  .details-div{
+    width: 10px;
+  }
+   .Acc-id {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 10px;
+    }
+  .Acc-card{
+     width: 100%;
+  }
+  .details-div1{
+    width: 10px;
+  }
+}
+
+
+#topbar {
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+#left-menu {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+#logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+#left-menu > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#logo > a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#logo span {
+    font-weight: 800;
+}
+#search-wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+#search-wrapper > i {
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+#search-box {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+#right-menu {
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+}
+#cart-wrapper {
+    position: relative;
+    margin-right: 32px;
+}
+#cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+#cart-wrapper > a {
+    text-decoration: none;
+    color: black;
+}
+#cart-wrapper i {
+    font-size: 18px;
+    cursor: pointer;
+}
+#right-menu > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#edyoda-projects-logo {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* Carosal styles */
+  .carousel-container {
+    width: 100%;
+    max-width: 85%;
+    margin: 100px auto 0px auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Add this styling for indication circles */
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #333;
+  }
+  
+
+  /* footer styles */
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* background-color: #333; */
+    color: #fff;
+    /* padding: 20px; */
+    font-family: sans-serif;
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .footer-column h3 {
+    margin-top: 0;
+  }
+  footer > div:first-of-type {
+    padding-left: 0;
+}
+footer > div {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+.footer-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
+  
+  @media (max-width: 768px) {
+    .footer-column {
+      flex: 0 0 100%;
+    }
+  }
+  
